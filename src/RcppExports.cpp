@@ -21,8 +21,23 @@ BEGIN_RCPP
 END_RCPP
 }
 
+RcppExport void C_interp1d(void *, void *, void *, void *, void *, void *, void *);
+RcppExport void C_interp2d(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+RcppExport void C_interp3d(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+RcppExport void C_massdist1d(void *, void *, void *, void *, void *, void *, void *);
+RcppExport void C_massdist2d(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+RcppExport void C_massdist3d(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+RcppExport void C_massdist4d(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+
 static const R_CallMethodDef CallEntries[] = {
     {"_ksRcpp_rcpp_hello", (DL_FUNC) &_ksRcpp_rcpp_hello, 0},
+    {"C_interp1d",   (DL_FUNC) &C_interp1d,    7},
+    {"C_interp2d",   (DL_FUNC) &C_interp2d,   11},
+    {"C_interp3d",   (DL_FUNC) &C_interp3d,   15},
+    {"C_massdist1d", (DL_FUNC) &C_massdist1d,  7},
+    {"C_massdist2d", (DL_FUNC) &C_massdist2d, 11},
+    {"C_massdist3d", (DL_FUNC) &C_massdist3d, 15},
+    {"C_massdist4d", (DL_FUNC) &C_massdist4d, 19},
     {NULL, NULL, 0}
 };
 
