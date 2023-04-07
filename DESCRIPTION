@@ -15,3 +15,5 @@ Imports: Rcpp (>= 1.0.9), FNN (>= 1.1), kernlab, KernSmooth (>= 2.22), Matrix, m
         mgcv, multicool, mvtnorm (>= 1.0-0), plot3D, pracma
 Suggests: geometry, MASS, misc3d (>= 0.4-0), oz, rgl (>= 0.66)
 LinkingTo: Rcpp
+URL: https://github.com/jmcurran/ksRcpp
+BugReports: https://github.com/jmcurran/ksRcpp/issues
